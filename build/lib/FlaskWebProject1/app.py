@@ -61,5 +61,11 @@ def process():
 
     return render_template('result.html', result=matching_combinations)
 
+def run():
+    if __name__ == '__main__':
+        app.run(debug=True)
+
+# ... (Your route handlers and other functions)
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    run()
